@@ -1,0 +1,213 @@
+@import "../../variables";
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    z-index: 11;
+    color: #fff;
+    padding-left: 230px;
+
+    .logo-header {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -25px;
+
+        img {
+            display: block;
+            height: 50px;
+        }
+    }
+
+    .header-menu {
+        text-transform: uppercase;
+        font-size: 18px;
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @media only screen and (max-width: $media-queries-desktop-xl) {
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: $media-queries-desktop) {
+            position: absolute;
+            width: 350px;
+            background: #1b2838;
+            top: 60px;
+            right: -5px;
+            padding: 0;
+            // display: none;
+        }
+
+        @media only screen and (min-width: 993px) {
+            display: block;
+        }
+
+        li {
+            float: right;
+
+            @media only screen and (max-width: $media-queries-desktop) {
+                float: none;
+            }
+
+            &.contact-switch,
+            &.classement {
+                display: block;
+                text-align: center;
+                cursor: pointer;
+                height: 60px;
+                line-height: 60px;
+                padding: 0 15px;
+                color: #fff;
+                transition: all .25s ease 0s;
+
+                @media only screen and (max-width: $media-queries-desktop) {
+                    text-align: right;
+                    padding: 15px 20px;
+                    font-size: 18px;
+                    line-height: 1;
+                    height: auto;
+                }
+            }
+
+            &.contact-switch:hover {
+                color: #d99a2b;
+
+                @media only screen and (max-width: $media-queries-desktop) {
+                    text-align: right;
+                    padding: 15px 20px;
+                    font-size: 18px;
+                    line-height: 1;
+                    height: auto;
+                    border-bottom: 1px solid #000;
+                }
+            }
+
+            &.classement {
+                background-image: url('../../assets/bg-classement3_1.webp');
+                background-size: cover;
+                color: #602b20;
+                font-weight: 700;
+                // display: none;
+
+                &:hover {
+                    height: 70px;
+                    line-height: 70px;
+                }
+            }
+
+            a {
+                display: block;
+                text-align: center;
+                height: 60px;
+                line-height: 60px;
+                padding: 0 15px;
+                color: #fff;
+                transition: all .25s ease 0s;
+
+                @media only screen and (max-width: $media-queries-desktop) {
+                    text-align: right;
+                    padding: 15px 20px;
+                    font-size: 18px;
+                    line-height: 1;
+                    height: auto;
+                    border-bottom: 1px solid #000;
+                }
+
+                &:hover {
+                    color: #d99a2b;
+
+                    @media only screen and (max-width: $media-queries-desktop) {
+                        background: #ffc029;
+                        color: #fff;
+                        height: auto;
+                        line-height: 1;
+                        border-bottom: 1px solid #000;
+                    }
+                }
+
+                &.video {
+                    color: #fff;
+                    background: linear-gradient(90deg, #7a3d01 0, #d89704 50%, #d89704 50%, #7a3d01 100%);
+                    font-weight: 700;
+
+                    &:hover {
+                        background: linear-gradient(90deg, #7a3d01 0, #d89704 50%, #d89704 50%, #7a3d01 100%);
+                        height: 70px;
+                        line-height: 70px;
+                        cursor: pointer;
+                    }
+                }
+
+                &.special {
+                    color: #fff;
+                    background: #d99a2b;
+                    font-weight: 700;
+
+                    &:hover {
+                        background: #d99a2b;
+                        height: 70px;
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lang {
+    color: #fff;
+    text-shadow: 2px 2px 2px #212121;
+    float: right;
+    padding: 15px 25px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    cursor: pointer;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.responsive-menu-opener {
+    float: right;
+    font-size: 36px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.show-responsive-1200,
+.show-responsive-320,
+.show-responsive-480,
+.show-responsive-768,
+.show-responsive-992 {
+    display: none;
+}
+
+@media only screen and (max-width: $media-queries-desktop) {
+    .show-responsive-992 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: $media-queries-desktop) {
+    .hide-responsive-992 {
+        display: none;
+    }
+}
+
+
+
+#header .header-menu li.contact-switch.active,
+.contact-switch.active:not(i) {
+    color: #d99a2b;
+}
