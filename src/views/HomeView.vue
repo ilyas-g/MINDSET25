@@ -3,6 +3,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 import SectionFirst from '../components/sectionFirst/SectionFirst.vue'
 import WhiteBar from '../components/whiteBar/WhiteBar.vue'
 import SectionSecond from '../components/sectionSecond/SectionSecond.vue'
+import SectionThird from '../components/sectionThird/SectionThird.vue'
 
 import useDimension from '../utils/useDimension.js'
 
@@ -22,6 +23,8 @@ const toggleModal = (toggleValue: boolean) => {
     <SectionFirst @toggle-modal="toggleModal(true)"/>
     <WhiteBar />
     <SectionSecond />
+    <SectionThird />
+
     <template v-if="isModal === true">
       <Modal @toggle-modal="toggleModal(false)">
         <iframe :width="width - 320" :height="(width - 320) / (16/9)" src="https://www.youtube.com/embed/6mFKuKw4hKA?si=RkylAhCb2E9aDK3V" 
