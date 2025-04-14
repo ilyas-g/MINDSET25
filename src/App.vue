@@ -3,6 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 
 import Header from './components/header/Header.vue'
+import Footer from './components/footer/Footer.vue'
+import Contact from './components/contactBlock/ContactBlock.vue'
 
 </script>
 
@@ -22,6 +24,10 @@ import Header from './components/header/Header.vue'
   </header> -->
 
   <RouterView />
+  <Footer @toggle-contact="toggleContact(true)" @toggle-classement="toggleClassement(true)" />
+  <template v-if="isContact === true">
+    <Contact mail="flashno47@gmail.com" @toggle-contact="toggleContact(false)" />
+  </template>
 </template>
 
 <style lang="scss">

@@ -2,7 +2,7 @@
     <section id="schedule" className="bg-fixed bg-cover">
         <div className="bg-layer"></div>
 
-        <h2 className="text-center relative-content">Jeux du line up</h2>
+        <h2 className="text-center relative-content">Venue</h2>
         <div className="container relative-content">
 
             <div className="text-center">
