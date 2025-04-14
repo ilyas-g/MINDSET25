@@ -77,7 +77,7 @@ header {
             }
 
             &.contact-switch:hover {
-                color: #d99a2b;
+                color: $bg-table-cell;
 
                 @media only screen and (max-width: $media-queries-desktop) {
                     text-align: right;
@@ -121,7 +121,7 @@ header {
                 }
 
                 &:hover {
-                    color: #d99a2b;
+                    color: $bg-table-cell;
 
                     @media only screen and (max-width: $media-queries-desktop) {
                         background: #ffc029;
@@ -147,11 +147,11 @@ header {
 
                 &.special {
                     color: #fff;
-                    background: #d99a2b;
+                    background: $bg-table-cell;
                     font-weight: 700;
 
                     &:hover {
-                        background: #d99a2b;
+                        background: $bg-table-cell;
                         height: 70px;
                         line-height: 70px;
                     }
@@ -209,5 +209,5 @@ header {
 
 #header .header-menu li.contact-switch.active,
 .contact-switch.active:not(i) {
-    color: #d99a2b;
+    color: $bg-table-cell;
 }

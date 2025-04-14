@@ -8,9 +8,10 @@
                     <div id="ope-logo" className="mb-4">
                         <img :src="MK1Logo" alt="Logo Mortal Kombat 1" />
                     </div>
-                    <div className="home-event-date">
+                    <br>
+                    <!-- <div className="home-event-date">
                         Championnat de France
-                    </div>
+                    </div> -->
                     <div className="home-event-buttons">
                         <a href="/#event-section" className="btn-ope">Présentation <span className="icon-chevron-down-solid-1"></span></a>
                         <a href="/#tournaments" className="btn-ope special">Tournois <span className="icon-chevron-down-solid-1" aria-hidden="true"></span></a>
@@ -22,11 +23,11 @@
     </section>
 </template>
 <script setup lang="ts">
-import MK1Logo from '../../assets/mk1-logo.webp'
-import videoBg from '../../assets/mkchampionshipvideo.mp4'
+import MK1Logo from '../../assets/mindset-logo.webp'
+import videoBg from '../../assets/mindsetvideo.mp4'
 </script>
 <style lang="scss">
-@import "../../variables";
+@use "../../variables";
 
 #home-section {
     // background-image: url('../../assets/001.jpg');
@@ -38,6 +39,18 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
     // }
 }
 
+.bg-overlay {
+    background: rgba(0, 1, 0, .8);
+}
+
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 .dark-section {
     background-color: #000;
     color: #fff;
@@ -107,7 +120,7 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
     font-size: 30px;
     margin-bottom: 30px;
 
-    @media only screen and (max-width: $media-queries-tablet) {
+    @media only screen and (max-width: variables.$media-queries-tablet) {
         margin-bottom: 10px;
 
     }
@@ -115,7 +128,7 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
 
 .home-event-buttons {
 
-    @media only screen and (max-width: $media-queries-tablet) {
+    @media only screen and (max-width: variables.$media-queries-tablet) {
         display: flex;
         flex-wrap: wrap;
 
@@ -125,7 +138,7 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
         }
     }
 
-    @media only screen and (max-width: $media-queries-desktop) {
+    @media only screen and (max-width: variables.$media-queries-desktop) {
         display: block;
     }
 
@@ -133,7 +146,7 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
         margin-bottom: 20px;
         margin-right: auto;
 
-        @media only screen and (min-width: $media-queries-tablet) {
+        @media only screen and (min-width: variables.$media-queries-tablet) {
             margin-right: 50px;
         }
     }
@@ -143,7 +156,7 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
     display: inline-block;
     background: rgba(0, 0, 0, .5);
     color: #fff;
-    border: 3px solid #d99a2b;
+    border: 3px solid variables.$bg-table-cell;
     max-width: 300px;
     width: 100%;
     text-transform: uppercase;
@@ -177,7 +190,7 @@ import videoBg from '../../assets/mkchampionshipvideo.mp4'
     }
 
     &.special {
-        background-color: #d99a2b;
+        background-color: variables.$bg-table-cell;
 
         &:active,
         &:focus,
