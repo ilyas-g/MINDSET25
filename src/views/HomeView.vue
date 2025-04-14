@@ -4,6 +4,7 @@ import SectionFirst from '../components/sectionFirst/SectionFirst.vue'
 import WhiteBar from '../components/whiteBar/WhiteBar.vue'
 import SectionSecond from '../components/sectionSecond/SectionSecond.vue'
 import SectionThird from '../components/sectionThird/SectionThird.vue'
+import SectionThirdBis from '../components/sectionThirdBis/SectionThirdBis.vue'
 
 import useDimension from '../utils/useDimension.js'
 
@@ -24,6 +25,7 @@ const toggleModal = (toggleValue: boolean) => {
     <WhiteBar />
     <SectionSecond />
     <SectionThird />
+    <SectionThirdBis />
 
     <template v-if="isModal === true">
       <Modal @toggle-modal="toggleModal(false)">

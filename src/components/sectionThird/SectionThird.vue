@@ -7,11 +7,18 @@
 
             <div className="text-center">
                 <!-- <p className="master-plus">Le MASTER EVENT + est l'unique événement de sa catégorie. Une étape majeure du championnat qui donnera un avantage considérable dans le classement général.</p> -->
-            <div>
-                <img :src="xko" alt="Logo du Championnat de France de Mortal Kombat" className="inline-photo show-on-scroll is-visible" />
-            </div>
+                <div>
+                        <div className="text-center more-info">
+                            <div className='ml-6 mr-6 mb-6'>
+                                <p className="strong-text caps center-text">Ethernet obligatoire</p>
+                                <img className="icon-ethernet" :src="ethernet" alt="Ethernet" />
+                            </div>
+                            <div className='ml-6 mr-6 mb-6'>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.051374113154!2d2.2521717767593885!3d48.93346329541996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665dbfc4b5c09%3A0xce609c8318b7871a!2s65%20Rue%20Germaine%20Tillion%2C%2092700%20Colombes!5e0!3m2!1sfr!2sfr!4v1744669466738!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
                 <!-- <a href="https://www.start.gg/tournament/paris-games-week-master-event/details" target="_blank" className="btn-ope masterEventPlus mt-5 mx-auto">{t('signup')}</a> -->
-                <RouterLink to="/rules" className="btn-ope special mt-3 mx-auto">Voir le règlement<span className="icon-chevron-down-solid-1" aria-hidden="true"></span></RouterLink>
             </div>
 
         </div>
