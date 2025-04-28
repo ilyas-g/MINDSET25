@@ -38,6 +38,9 @@ import mkclogo from '../../assets/ChampionshipMK_LOGO2023_V2-2k.webp'
         margin-bottom: 10px;
     }
 
+    iframe {
+        display: none;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -46,6 +49,12 @@ import mkclogo from '../../assets/ChampionshipMK_LOGO2023_V2-2k.webp'
         @media screen and (min-width: variables.$media-queries-desktop) {
             flex-wrap: nowrap;
             flex-direction: row;
+        }
+
+        @media screen and (min-width: variables.$media-queries-desktop-xl) {
+            iframe {
+                display: block;
+            }
         }
     }
 

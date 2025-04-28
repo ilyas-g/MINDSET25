@@ -24,8 +24,8 @@ const toggleModal = (toggleValue: boolean) => {
     <SectionFirst @toggle-modal="toggleModal(true)"/>
     <WhiteBar />
     <SectionSecond />
-    <SectionThird />
     <SectionThirdBis />
+    <SectionThird />
 
     <template v-if="isModal === true">
       <Modal @toggle-modal="toggleModal(false)">

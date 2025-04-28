@@ -9,27 +9,24 @@
 
                     <div>
                         <div className="text-center more-info">
-                            <div className='ml-4 mr-4 mb-4'>
-                                <img :src="xko" alt="Logo du Championnat de France de Mortal Kombat" className="inline-photo show-on-scroll is-visible" />
-
-                            </div>
-                            <div className='ml-4 mr-4 mb-4'>
-                                <img :src="sf6" alt="Logo du Championnat de France de Mortal Kombat" className="inline-photo show-on-scroll is-visible" />
-                            </div>
-                            <div className='ml-4 mr-4 mb-4'>
-                                <p className="strong-text caps center-text">Rejoignez le discord</p>
-                                <a href="https://discord.gg/p5Ubc3r" target="_blank" className="ml-1" aria-label="Discord Mortal Kombat France"><span className="icon-discord-1"></span></a>
-                            </div>
+                                <Game :imgSrc=xko support="Playstation 5" format="Solo" description="Logo de 2xko" />
+                                <Game :imgSrc=sf6 support="Playstation 5" format="Solo" description="Logo de Street Fighter 6" />
+                                <Game :imgSrc=t8 support="Playstation 5" format="Solo" description="Logo de 2xko" />
+                                <Game :imgSrc=ggst support="Playstation 5" format="Solo" description="Logo de 2xko" protour="Arc World Tour 2025-2026"/>
+                                <Game :imgSrc=gbvsr support="Playstation 5" format="Solo" description="Logo de 2xko" />
+                                <Game :imgSrc=ffcotw support="Playstation 5" format="Solo" description="Logo de 2xko" />
+                                <Game :imgSrc=ffcotw support="Playstation 5" format="Solo" description="Logo de 2xko" />
+                                <Game :imgSrc=ffcotw support="Playstation 5" format="Solo" description="Logo de 2xko" />
                         </div>
                     </div>
-                    <div className="online-events">
+                    <!-- <div className="online-events">
                         <div className="text-center pr-5 pl-5 mb-5">
                             <p className="mb-5">L'opportunité pour n'importe quel organisateur de tournoi de contribuer à ce championnat.
                             <br/>Les « online community event » sont des événements ouverts à tous (Français uniquement). Pour soumettre son tournoi en ligne et être éligible, il vous suffit de contacter « FlashNo47 » par mail ou sur le discord MK France. Le NSxC proposera six tournois en ligne. Six autres tournois seront laissés à la disposition d'organisateurs de la communauté pour proposer leur propre tournoi. Les demandes devront être passées entre le 10 octobre 2023 et le 31 décembre 2023.
                             <br/>Les tournois devront avoir lieu entre le 10 Octobre 2023 et le 31 Janvier 2024.</p>
                             <RouterLink to="/rules" className="btn-ope special">Voir le règlement<span className="icon-chevron-down-solid-1" aria-hidden="true"></span></RouterLink>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -47,6 +44,15 @@ import ggst from '../../assets/games_logos/ggst.png'
 import gbvsr from '../../assets/games_logos/gbvsr.png'
 import ffcotw from '../../assets/games_logos/ffcotw.png'
 import xko from '../../assets/games_logos/2xko.png'
+
+import Game from '@/components/game/Game.vue'
+
+
+// imagePath() {
+//     if (this.image !== '') {
+//       return require(`../../assets/games_logos/${image}`);
+//     }
+//   }
 </script>
 <style lang="scss">
 @use "../../variables";
@@ -54,7 +60,8 @@ import xko from '../../assets/games_logos/2xko.png'
 #schedule-details {
     color: #fff;
     padding: 50px 35px;
-    background-image: url('../../assets/WuAcademyDay_2.webp');
+    // background-image: url('../../assets/WuAcademyDay_2.webp');
+    background-color: black;
     position: relative;
 
     &::before {
@@ -112,8 +119,9 @@ import xko from '../../assets/games_logos/2xko.png'
     }
 
     .more-info {
+        flex-wrap: wrap;
         img {
-            width: 150px;
+            width: 250px;
         }
         @media screen and (min-width: variables.$media-queries-tablet-small) {
 

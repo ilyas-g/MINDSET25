@@ -13,9 +13,9 @@
                         Championnat de France
                     </div> -->
                     <div className="home-event-buttons">
-                        <a href="/#event-section" className="btn-ope">Présentation <span className="icon-chevron-down-solid-1"></span></a>
-                        <a href="/#tournaments" className="btn-ope special">Tournois <span className="icon-chevron-down-solid-1" aria-hidden="true"></span></a>
-                        <button className="btn-ope video btf-btn" @click="$emit('toggleModal')">Voir le trailer</button>
+                        <a href="/#event-section" className="btn-ope">Voir le trailer</a>
+                        <button className="btn-ope video btf-btn" @click="$emit('toggleModal')">Inscription</button>
+                        <!-- <a href="/#tournaments" className="btn-ope special">Inscription <span className="icon-chevron-down-solid-1" aria-hidden="true"></span></a> -->
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ import videoBg from '../../assets/mindsetvideo.mp4'
     display: inline-block;
     background: rgba(0, 0, 0, .5);
     color: #fff;
-    border: 3px solid variables.$bg-table-cell;
+    border: 3px solid variables.$main-color;
     max-width: 300px;
     width: 100%;
     text-transform: uppercase;
@@ -169,7 +169,7 @@ import videoBg from '../../assets/mindsetvideo.mp4'
     &:active,
     &:focus,
     &:hover {
-        border: 3px solid #ffc029;
+        border: 3px solid variables.$main-color-hover;
         color: #fff;
     }
 
@@ -190,12 +190,12 @@ import videoBg from '../../assets/mindsetvideo.mp4'
     }
 
     &.special {
-        background-color: variables.$bg-table-cell;
+        background-color: variables.$main-color;
 
         &:active,
         &:focus,
         &:hover {
-            background-color: #ffc029;
+            background-color: variables.$main-color-hover;
         }
     }
 
@@ -209,8 +209,8 @@ import videoBg from '../../assets/mindsetvideo.mp4'
         &:focus,
         &:hover {
             cursor: pointer;
-            max-width: 310px;
-            padding: 19px;
+            // max-width: 310px;
+            // padding: 19px;
             color: #fff;
             box-shadow: 0 0 60px rgb(242 150 39 / 60%);
         }

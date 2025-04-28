@@ -18,7 +18,10 @@
                     <div className="follow-us">
                         <h4 className="text-center">Suivez NSXC</h4>
                         <p className="text-center">
-                            <a href="https://twitter.com/_NSxC" target="_blank" className="ml-1 mr-1" aria-label="Twitter NSxC"><span className="icon-square-twitter"></span></a>
+                            <a href="https://discord.gg/d2jgxxyZg3" target="_blank" className="ml-1 mr-1" aria-label="Discord Mindset"><span className="icon-discord-1"></span></a>
+                            <a href="https://twitter.com/_NSxC" target="_blank" className="ml-1 mr-1" aria-label="Twitter NSxC"><span className="icon-x"></span></a>
+                            <a href="https://www.instagram.com/__nsxc" target="_blank" className="ml-1 mr-1" aria-label="Instagram NSxC"><span className="icon-instagram"></span></a>
+                            <a href="https://www.twitch.tv/nsxc_tv" target="_blank" className="ml-1 mr-1" aria-label="Twitcch NSxC"><span className="icon-twitch-1"></span></a>
                         </p>
                     </div>
                 </div>
@@ -43,7 +46,7 @@ import YuzuLogo from '@/assets/logo-yuzu-gamingT2.webp'
 #footer {
     color: #fff;
     padding: 50px 20px;
-    border-top: 30px solid #ffc029;
+    border-top: 30px solid variables.$main-color-hover;
     background: url("../../assets/00663.webp") no-repeat #000 fixed;
     background-size: cover;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);

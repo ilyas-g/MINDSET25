@@ -1,4 +1,4 @@
-@import "../../variables";
+@use "../../variables";
 
 header {
     position: fixed;
@@ -31,11 +31,11 @@ header {
         padding: 0;
         margin: 0;
 
-        @media only screen and (max-width: $media-queries-desktop-xl) {
+        @media only screen and (max-width: variables.$media-queries-desktop-xl) {
             font-size: 16px;
         }
 
-        @media only screen and (max-width: $media-queries-desktop) {
+        @media only screen and (max-width: variables.$media-queries-desktop) {
             position: absolute;
             width: 350px;
             background: #1b2838;
@@ -52,7 +52,7 @@ header {
         li {
             float: right;
 
-            @media only screen and (max-width: $media-queries-desktop) {
+            @media only screen and (max-width: variables.$media-queries-desktop) {
                 float: none;
             }
 
@@ -67,7 +67,7 @@ header {
                 color: #fff;
                 transition: all .25s ease 0s;
 
-                @media only screen and (max-width: $media-queries-desktop) {
+                @media only screen and (max-width: variables.$media-queries-desktop) {
                     text-align: right;
                     padding: 15px 20px;
                     font-size: 18px;
@@ -77,9 +77,9 @@ header {
             }
 
             &.contact-switch:hover {
-                color: $bg-table-cell;
+                color: variables.$main-color;
 
-                @media only screen and (max-width: $media-queries-desktop) {
+                @media only screen and (max-width: variables.$media-queries-desktop) {
                     text-align: right;
                     padding: 15px 20px;
                     font-size: 18px;
@@ -111,7 +111,7 @@ header {
                 color: #fff;
                 transition: all .25s ease 0s;
 
-                @media only screen and (max-width: $media-queries-desktop) {
+                @media only screen and (max-width: variables.$media-queries-desktop) {
                     text-align: right;
                     padding: 15px 20px;
                     font-size: 18px;
@@ -121,10 +121,10 @@ header {
                 }
 
                 &:hover {
-                    color: $bg-table-cell;
+                    color: variables.$main-color;
 
-                    @media only screen and (max-width: $media-queries-desktop) {
-                        background: #ffc029;
+                    @media only screen and (max-width: variables.$media-queries-desktop) {
+                        background: variables.$main-color-hover;
                         color: #fff;
                         height: auto;
                         line-height: 1;
@@ -147,11 +147,11 @@ header {
 
                 &.special {
                     color: #fff;
-                    background: $bg-table-cell;
+                    background: variables.$main-color;
                     font-weight: 700;
 
                     &:hover {
-                        background: $bg-table-cell;
+                        background: variables.$main-color;
                         height: 70px;
                         line-height: 70px;
                     }
@@ -193,13 +193,13 @@ header {
     display: none;
 }
 
-@media only screen and (max-width: $media-queries-desktop) {
+@media only screen and (max-width: variables.$media-queries-desktop) {
     .show-responsive-992 {
         display: block;
     }
 }
 
-@media only screen and (max-width: $media-queries-desktop) {
+@media only screen and (max-width: variables.$media-queries-desktop) {
     .hide-responsive-992 {
         display: none;
     }
@@ -209,5 +209,5 @@ header {
 
 #header .header-menu li.contact-switch.active,
 .contact-switch.active:not(i) {
-    color: $bg-table-cell;
+    color: variables.$main-color;
 }

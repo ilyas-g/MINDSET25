@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $media-queries-desktop-xl: 1200px;
 $media-queries-desktop: 992px;
 $media-queries-tablet: 768px;
@@ -27,7 +29,8 @@ $photo-shadow-color : #5f2f1182;
 $border: #8068c1;
 $border-hover: #faf4ea;
 $old-border: #d99a2b;
-$bg-table-cell: #2bd9a5;
 
-$hover: $light-gold;
-$old-hover: #ffc029;
+$main-color: #fe7312;
+$second-color: rgb(149 33 236);
+$dark-color: #0a0a0a;
+$main-color-hover: $second-color;

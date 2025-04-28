@@ -6,16 +6,16 @@ import character from '../../assets/raiden.webp'
 
 </script>
 <style lang="scss">
-@import "../../variables";
+@use "../../variables";
     .character {
         margin: auto;
         width: 260px;
 
-        @media screen and (min-width: $media-queries-mobile) {
+        @media screen and (min-width: variables.$media-queries-mobile) {
             width: 300px;
         }
 
-        @media screen and (min-width: $media-queries-tablet-small) {
+        @media screen and (min-width: variables.$media-queries-tablet-small) {
             width: 400px;
         }
     }
