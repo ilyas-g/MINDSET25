@@ -36,7 +36,6 @@ defineProps<{
     background-color: variables.$dark-color;
     border-radius: 5px;
     width: 350px;
-    height: 355px;
 
     &-head {
         height: 200px;
@@ -48,18 +47,16 @@ defineProps<{
     }
 
     &-body {
-        // background-color: color.adjust(variables.$second-color, $lightness: -30%);
-        // border-top: 1px solid white;
         text-transform: uppercase;
         line-height: 1;
-        padding: 20px;
-        display: flex;
+        height: 160px;
+        display: grid; /* contexte sur le parent */
+        place-items: center; /* alignement vertical et horizontal des enfants dans leur cellule */
 
-        flex-direction: column;
-        align-self: center;
-
-        // p:last-child {margin: 0;}
-
+        p {
+            margin: initial;
+            font-family: 'Gotham BlackItalic';
+        }
     }
 }
 

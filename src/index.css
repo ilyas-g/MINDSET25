@@ -66,6 +66,23 @@
   font-display: block;
 }
 
+
+
+
+@font-face {
+  font-family: "Gotham Black";
+  src: url(./assets/fonts/gotham-font-family//Gotham/Gotham-Black.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham BlackItalic";
+  src: url(./assets/fonts/gotham-font-family//Gotham/Gotham-BlackItalic.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'mindsetsIcons' !important;
@@ -79,45 +96,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* .icon-square-twitter:before {
-  content: "\e900";
-}
-.icon-xmark-solid:before {
-  content: "\e901";
-}
-.icon-bars-solid-2:before {
-  content: "\e902";
-}
-.icon-calendar-solid:before {
-  content: "\e903";
-}
-.icon-user-solid:before {
-  content: "\e904";
-}
-.icon-location-dot-solid:before {
-  content: "\e905";
-}
-.icon-twitch-1:before {
-  content: "\e906";
-}
-.icon-twitter-1:before {
-  content: "\e907";
-}
-.icon-discord-1:before {
-  content: "\e908";
-}
-.icon-chevron-down-solid-1:before {
-  content: "\e909";
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-youtube:before {
-  content: "\ea9d";
-} */
-
-
 
 
 .icon-square-twitter:before {

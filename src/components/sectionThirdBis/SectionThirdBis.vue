@@ -10,11 +10,10 @@
                     <div>
                         <div className="text-center more-info">
                                 <Game :imgSrc=xko support="Playstation 5" format="Solo" description="Logo de 2xko" />
-                                <Game :imgSrc=sf6 support="Playstation 5" format="Solo" description="Logo de Street Fighter 6" />
+                                <Game :imgSrc=sf6 support="PC" format="Solo" description="Logo de Street Fighter 6" />
                                 <Game :imgSrc=t8 support="Playstation 5" format="Solo" description="Logo de 2xko" />
-                                <Game :imgSrc=ggst support="Playstation 5" format="Solo" description="Logo de 2xko" protour="Arc World Tour 2025-2026"/>
+                                <Game :imgSrc=ggst support="Playstation 4" format="Solo" description="Logo de 2xko" protour="Arc World Tour 2025-2026"/>
                                 <Game :imgSrc=gbvsr support="Playstation 5" format="Solo" description="Logo de 2xko" />
-                                <Game :imgSrc=ffcotw support="Playstation 5" format="Solo" description="Logo de 2xko" />
                                 <Game :imgSrc=ffcotw support="Playstation 5" format="Solo" description="Logo de 2xko" />
                                 <Game :imgSrc=ffcotw support="Playstation 5" format="Solo" description="Logo de 2xko" />
                         </div>
