@@ -2,10 +2,10 @@
     <section id="event-section" className="black-section">
         <div className="orange bg-fixed bg-layer"></div>
         <div className="container relative-content align-center">
-            <div>
+            <!-- <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/O-LQ8i3BcHE?si=M4OsYH9pzDRcZRZr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <img :src="mkclogo" alt="Logo du Championnat de France de Mortal Kombat" className="inline-photo show-on-scroll is-visible" /> -->
-            </div>
+                <img :src="mkclogo" alt="Logo du Championnat de France de Mortal Kombat" className="inline-photo show-on-scroll is-visible" />
+            </div> -->
             <div className="vertical-align-container">
                 <div className="event-description vertical-align-content">
                     <h2 className="text-center">C'EST DANS NOTRE SANG !</h2>
@@ -30,7 +30,7 @@ import mkclogo from '../../assets/ChampionshipMK_LOGO2023_V2-2k.webp'
 @use "../../variables";
 
 #event-section {
-    background-image: url("../../assets/mindset25_bg_section_2.jpg");
+    // background-image: url("../../assets/mindset25_bg_section_2.jpg");
     background-size: cover;
     position: relative;
 

@@ -18,20 +18,32 @@
 				</span>
 			</div>
 
+
+  <!-- <h1>{{ t("hello") }}</h1> -->
 			<ul class="header-menu clearfix" :class="isBurger === false && 'hide-responsive-992'">
+				<li>
+					<div class="locale-changer">
+    <select v-model="$i18n.locale">
+      <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+    </select>
+  </div>
+				</li>
 				<!-- <li class="classement" @click="$emit('toggleClassement')">Classement</li> -->
 				<li class="contact-switch" @click="$emit('toggleContact')">Contact</li>
-				<li><a id="five" data-toggle="modal" data-target="#myModal" className="video" @click="$emit('toggleModal')">Inscription</a></li>
-				<!-- <li><a href="/#tournaments" class="special">Tournois</a></li> -->
+				<!-- <li><a id="five" data-toggle="modal" data-target="#myModal" className="video" @click="$emit('toggleModal')">{{ t("hello") }}</a></li> -->
+				<li><a href="/#tournaments" class="video">{{ t("inscription") }}</a></li>
 				<!-- <li><a href="/#schedule">Etapes</a></li>
 				<li><a href="/#event-section">Présentation</a></li> -->
 			</ul>
 		</header>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { RouterLink, RouterView } from 'vue-router'
 import nsxcLogo from '@/assets/NSXC_BLANC2.webp'
 import { ref } from 'vue'
+
+const { t } = useI18n()
 
 const isBurger = ref(false)
 const toggleBurger = (toggleValue: boolean) => {
