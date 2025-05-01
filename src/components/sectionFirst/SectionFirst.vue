@@ -9,12 +9,12 @@
                         <img :src="MK1Logo" alt="Logo Mortal Kombat 1" />
                     </div>
                     <br>
-                    <!-- <div className="home-event-date">
-                        Championnat de France
-                    </div> -->
+                    <div className="home-event-date">
+                        {{ t("datesEvent") }}
+                    </div>
                     <div className="home-event-buttons">
-                        <a href="/#event-section" className="btn-ope">Voir le trailer</a>
-                        <button className="btn-ope video btf-btn" @click="$emit('toggleModal')">Inscription</button>
+                        <a href="/#event-section" className="btn-ope">{{ t("watchTrailer") }}</a>
+                        <button className="btn-ope video btf-btn" @click="$emit('toggleModal')">{{ t("inscription") }}</button>
                         <!-- <a href="/#tournaments" className="btn-ope special">Inscription <span className="icon-chevron-down-solid-1" aria-hidden="true"></span></a> -->
                     </div>
                 </div>
@@ -23,8 +23,12 @@
     </section>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 import MK1Logo from '../../assets/mindset-logo.webp'
 import videoBg from '../../assets/mindsetvideo.mp4'
+
+const { t } = useI18n()
 </script>
 <style lang="scss">
 @use "../../variables";

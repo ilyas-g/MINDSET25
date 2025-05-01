@@ -4,7 +4,7 @@
 
         <div className="container relative-content">
             <div>
-                <h2 className="relative-content">Plan d'accès</h2>
+                <h2 className="relative-content">{{ t("venueTitle") }}</h2>
 
                 <p className="center-text">La PFL se déroulera du mois de Novembre 2022 à Mai 2023 à l'adresse suivante :</p>
 
@@ -29,19 +29,19 @@
             <div class="ml-4 mr-4 mb-4">
                 <img :src="kopster" alt="de" />
                 <p className="text-center">KOPSTER Hotel Residence Paris Ouest Colombes</p>
-                <a href="#" target="_blank" className="btn-ope masterEventPlus mx-auto">Plus d'informations</a>
+                <a href="#" target="_blank" className="btn-ope mx-auto">{{ t("moreInformations") }}</a>
             </div>
 
             <div class="ml-4 mr-4 mb-4">
                 <img :src="kyriad" alt="de" />
                 <p className="text-center">Hôtel Kyriad Colombes</p>
-                <a href="#" target="_blank" className="btn-ope masterEventPlus mx-auto">Plus d'informations</a>
+                <a href="#" target="_blank" className="btn-ope mx-auto">{{ t("moreInformations") }}</a>
             </div>
 
             <div class="ml-4 mr-4 mb-4">
                 <img :src="allSuites" alt="de" />
                 <p className="text-center">All Suites Appart Hôtel Paris Ouest Colombes</p>
-                <a href="#" target="_blank" className="btn-ope masterEventPlus mx-auto">Plus d'informations</a>
+                <a href="#" target="_blank" className="btn-ope mx-auto">{{ t("moreInformations") }}</a>
             </div>
         </div>
         </div>
@@ -49,10 +49,13 @@
     </section>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 import kopster from '../../assets/hotel-kopster.jpg'
 import allSuites from '../../assets/hotel-all-suites.jpg'
 import kyriad from '../../assets/hotel-kyriad.jpg'
 
+const { t } = useI18n()
 </script>
 <style lang="scss">
 @use "../../variables";

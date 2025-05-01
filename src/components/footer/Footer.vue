@@ -4,14 +4,14 @@
             <div className="container">
 
                 <ul className="footer-nav mb-4">
-                    <li><a href="/#event-section">Présentation</a>
+                    <li><a href="/#event-section">{{ t("inscription") }}</a>
                     </li>
-                    <li><a href="/#schedule">Étapes</a>
+                    <!-- <li><a href="/#schedule">Étapes</a>
                     </li>
                     <li><a href="/#tournaments">Tournois</a>
-                    </li>
+                    </li> -->
                     <li @click="$emit('toggleContact')">Contact</li>
-                    <li @click="$emit('toggleClassement')">Classement</li>
+                    <!-- <li @click="$emit('toggleClassement')">Classement</li> -->
                 </ul>
 
                 <div>
@@ -35,10 +35,13 @@
     </footer>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 import { RouterLink, RouterView } from 'vue-router'
 import NSXCLogo from '@/assets/NSXC_BLANC2.webp'
 import YuzuLogo from '@/assets/logo-yuzu-gamingT2.webp'
 
+const { t } = useI18n()
 </script>
 <style lang="scss">
 @use "../../variables";
